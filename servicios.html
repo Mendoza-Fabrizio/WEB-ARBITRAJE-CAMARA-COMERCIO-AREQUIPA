@@ -50,7 +50,7 @@
       }
       .container-main {
         margin-bottom: 5%;
-        background-image: url("https://images.pexels.com/photos/3862637/pexels-photo-3862637.jpeg?cs=srgb&dl=pexels-thisisengineering-3862637.jpg&fm=jpg");
+        background-image: url(assets/background.jpg);
         height: 90vh;
         display: flex;
         flex-direction: column;
@@ -133,6 +133,15 @@
         display: flex;
         justify-content: center;
       }
+      .nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -142,29 +151,42 @@
           <div>
             <img
               class="logo"
-              src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=400"
+              src="./assets/logo.svg"
               alt="img_logo"
             />
           </div>
           <div class="nav">
-            <a href="/">Inicio</a>
-            <a href="/">Nosotros</a>
-            <a href="/servicios.html">Servicios</a>
-            <button>
-              <p>GPS Arbitral</p>
-            </button>
-            <button>
-              <p>Certificaciones o ISO</p>
-            </button>
-            <p>|</p>
-            <div>
-              <a href="">Contacto</a>
-              <img
-                class="img-nav"
-                width="25"
-                src="./assets/people.png"
-                alt="icon_people"
-              />
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/">Nosotros</a></li>
+              <li><a href="/servicios.html">Servicios</a></li>
+              <li><button>
+                <p>GPS Arbitral</p>
+              </button></li>
+              <li><button>
+                <p>Certificaciones</p>
+              </button></li>
+              <li><button>
+                <p>Denuncias</p>
+              </button></li>
+              <li><p>|</p></li>
+              
+              <li><div>
+                <a href="">Contacto</a>
+                <img
+                  class="img-nav"
+                  width="25"
+                  src="./assets/people.png"
+                  alt="icon_people"
+                /></li>
+            </ul>
+            
+            
+            
+            
+            
+            
+            
             </div>
           </div>
         </nav>
